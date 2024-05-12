@@ -1,13 +1,46 @@
 .header {
-    background-color: #c0e4f4;
-    padding: 50px 0;
 
-    &__row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 }
+
+.header__top {
+    padding: 11px 0;
+    background: var(--osnovnoy-cvet);
+}
+
+.header__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.header__tel {
+    font-size: 14px;
+    font-weight: 500;
+    width: max-content;
+    max-width: fit-content;
+}
+
+.header__bottom {
+    padding: 7px 0;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.header__account-list {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    height: 20px;
+}
+
+.header__account-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
+
+
 
 .header__nav {
     display: block;

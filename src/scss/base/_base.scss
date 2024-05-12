@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Russo+One&display=swap');
 
 html {
 	scroll-behavior: smooth;
@@ -6,9 +6,10 @@ html {
 }
 
 body {
-	background-color: var(--page-bg);
-	color: var(--text-color);
-	font-family: var(--font-main);
+	background: var(--osnovnoy-cvet);
+	color: var(--belyy);
+	line-height: 111%;
+	font-family: var(--font-family);
 	text-wrap: balance;
 }
 
@@ -18,17 +19,9 @@ img {
 
 a {
 	color: var(--link-color);
+	&:hover {
+		color: var(--link-hover);
+	}
 }
 
-code {
-	background-color: #e9f1f6;
-	padding: 0.2rem;
-	border-radius: 4px;
-}
 
-pre.code {
-	overflow-x: auto;
-	background-color: #e9f1f6;
-	padding: 1rem;
-	border-radius: 4px;
-}

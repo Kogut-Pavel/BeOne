@@ -1,11 +1,38 @@
-.header__nav {
-}
 .nav {
-	font-size: 18px;
+    font-size: 14px;
+    font-weight: 500;
 }
 .nav__list {
-	display: flex;
-	column-gap: 30px;
+    display: flex;
+    align-items: center;
+	flex-wrap: wrap;
+    gap: 20px 40px;
 }
-.active {
+
+.nav--bottom {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 111%;
+    text-transform: uppercase;
+	
+}
+
+.nav--bottom .nav__list {
+	gap: 33px;
+
+}
+
+.nav--bottom .nav__list li a {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: -10px;
+		transform: translateY(-50%);
+		border-radius: 100%;
+		background: var(--belyy);
+		width: 4px;
+		height: 4px;
+	}
 }
