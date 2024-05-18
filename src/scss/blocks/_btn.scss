@@ -1,0 +1,16 @@
+.btn {
+    padding: 11px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--biryuza);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 111%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--belyy);
+}

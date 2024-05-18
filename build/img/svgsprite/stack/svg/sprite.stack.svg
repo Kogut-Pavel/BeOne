@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style><svg fill="none" viewBox="0 0 16 18" id="account" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 36 67" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style><svg fill="none" viewBox="0 0 16 18" id="account" xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#aa)">
         <path d="M11 10.594c-.96 0-1.423.531-3 .531s-2.036-.531-3-.531c-2.484 0-4.5 1.999-4.5 4.462v.85A1.6 1.6 0 0 0 2.107 17.5h11.786a1.6 1.6 0 0 0 1.607-1.594v-.85c0-2.463-2.016-4.462-4.5-4.462Zm2.893 5.312H2.107v-.85c0-1.58 1.3-2.868 2.893-2.868.489 0 1.282.53 3 .53 1.731 0 2.508-.53 3-.53 1.594 0 2.893 1.288 2.893 2.868v.85ZM8 10.062c2.662 0 4.821-2.141 4.821-4.78C12.821 2.641 10.661.5 8 .5 5.338.5 3.179 2.642 3.179 5.281c0 2.64 2.16 4.782 4.821 4.782Zm0-7.968c1.771 0 3.214 1.43 3.214 3.187S9.771 8.47 8 8.47 4.786 7.038 4.786 5.28c0-1.756 1.443-3.187 3.214-3.187Z" fill="#fff"/>
     </g>
@@ -7,9 +7,29 @@
             <path fill="#fff" transform="translate(.5 .5)" d="M0 0h15v17H0z"/>
         </clipPath>
     </defs>
+</svg><svg fill="none" viewBox="0 0 18 20" id="arrow-right-bottom" xmlns="http://www.w3.org/2000/svg">
+    <path d="m3 3.5 12 13m0 0V4.02m0 12.48H3.48" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg><svg fill="none" viewBox="0 0 21 20" id="cart" xmlns="http://www.w3.org/2000/svg">
     <path d="M4.668 5.833H16.16a1.667 1.667 0 0 1 1.658 1.833l-.5 5a1.667 1.667 0 0 1-1.658 1.5H7.7a1.667 1.667 0 0 1-1.635-1.34L4.668 5.834Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
     <path d="m4.668 5.833-.675-2.702a.833.833 0 0 0-.808-.631H2.168M7.168 17.5h1.667M13.836 17.5h1.667" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg><svg fill="none" viewBox="0 0 21 20" id="heart" xmlns="http://www.w3.org/2000/svg">
     <path d="M6.335 2.5c-2.301 0-4.167 1.847-4.167 4.125 0 1.84.73 6.204 7.907 10.617a.821.821 0 0 0 .853 0c7.177-4.413 7.907-8.778 7.907-10.617 0-2.278-1.866-4.125-4.167-4.125-2.3 0-4.167 2.5-4.167 2.5S8.635 2.5 6.335 2.5Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><svg fill="none" viewBox="0 0 35 67" id="hero-slider-arrow-left" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#ea)">
+        <path d="M33.894 6.136a3.292 3.292 0 1 0-4.787-4.523L1.128 31.238a3.292 3.292 0 0 0 0 4.523l27.98 29.628a3.291 3.291 0 1 0 4.786-4.52L8.047 33.5 33.894 6.136Z" fill="#ADBDC7"/>
+    </g>
+    <defs>
+        <clipPath id="ea">
+            <path fill="#fff" d="M0 0h35v67H0z"/>
+        </clipPath>
+    </defs>
+</svg><svg fill="none" viewBox="0 0 36 67" id="hero-slider-arrow-right" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#fa)">
+        <path d="M1.929 6.136a3.292 3.292 0 1 1 4.786-4.523l27.979 29.625a3.292 3.292 0 0 1 0 4.523L6.714 65.389a3.292 3.292 0 1 1-4.785-4.52L27.775 33.5 1.929 6.136Z" fill="#ADBDC7"/>
+    </g>
+    <defs>
+        <clipPath id="fa">
+            <path fill="#fff" transform="matrix(-1 0 0 1 35.822 0)" d="M0 0h35v67H0z"/>
+        </clipPath>
+    </defs>
 </svg></svg>

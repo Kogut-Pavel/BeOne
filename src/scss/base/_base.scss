@@ -10,7 +10,7 @@ body {
 	color: var(--belyy);
 	line-height: 111%;
 	font-family: var(--font-family);
-	text-wrap: balance;
+	// text-wrap: balance;
 }
 
 img {
@@ -24,4 +24,10 @@ a {
 	}
 }
 
+.accent-color {
+	color: var(--biryuza);
+}
 
+section {
+	margin: 55px 0;
+}
