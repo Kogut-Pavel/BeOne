@@ -1,0 +1,120 @@
+.card {
+    position: relative;
+    padding: 7px 10px 12px 10px;
+    max-width: 285px;
+    width: auto;
+    min-height: 387px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background: var(--seryy);
+}
+
+.card__image {
+    margin: 0 auto;
+    width: fit-content;
+    height: 275px;
+
+}
+
+.card__title {
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    &:hover {
+        color: #000;
+    }
+}
+
+.card__footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card__sale {
+    padding: 2px 5px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--belyy);
+    border-radius: 3px;
+    background: #d44848;
+}
+
+.card__old-price {
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    color: var(--linii);
+}
+
+.card__new-price {
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.card__favourites-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.card__cart-button {
+    width: 20px;
+    height: 20px;
+}
+
+.card.link-to-all {
+
+    padding: 0;
+    background: var(--biryuza);
+    
+    a {
+        padding: 12px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        font-family: var(--third-family);
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 94%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--belyy);
+    }
+}
+
+.card.card-image {
+    padding: 0;
+    img {
+        object-fit: cover;
+    }
+}

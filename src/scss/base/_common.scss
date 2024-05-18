@@ -1,0 +1,19 @@
+// Шапка секции
+
+.section-header {
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.section-header p {
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 111%;
+    text-transform: uppercase;
+    color: var(--belyy);
+    text-wrap: pretty;
+}
