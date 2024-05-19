@@ -29,15 +29,35 @@
 	height: 19px;
 }
 
+// иконки в карточке
+
 .icon--cart-black {
 	stroke: #000;
 	width: 100%;
 	height: 100%;
-	
 }
-
 .icon--heart-blue {
 	stroke: #004eb2;
+	width: 100%;
+	height: 100%;
+}
+
+// иконки соц. сетей
+
+.icon--instagram {
+	fill: var(--belyy);
+	width: 100%;
+	height: 100%;
+}
+
+.icon--tiktok {
+	stroke: var(--belyy);
+	width: 100%;
+	height: 100%;
+}
+
+.icon--vkontakte {
+	fill: var(--belyy);
 	width: 100%;
 	height: 100%;
 }
