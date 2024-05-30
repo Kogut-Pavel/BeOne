@@ -22,3 +22,13 @@
     color: var(--belyy);
     text-wrap: pretty;
 }
+
+// отступы индивидуальны и стилизуются в соответствующих файлах
+.promo-text {
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 111%;
+    text-transform: uppercase;
+    color: var(--belyy);
+}
