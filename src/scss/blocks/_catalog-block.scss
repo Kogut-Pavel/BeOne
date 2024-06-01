@@ -44,10 +44,11 @@
 
 
 .catalog-block__list {
-    padding: 10px 0;
-    border-top: 0.50px solid var(--linii);
-    border-bottom: 0.50px solid var(--linii);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // gap: 20px;
+
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
