@@ -1,53 +1,89 @@
 .catalog {
 }
 
-.catalog__tab-row {
-    padding: 19px 0;
+.catalog__filter {
+    margin-top: 22px;
+}
+
+.catalog__tabs-row-top {
+    padding: 30px 0;
+
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     gap: 40px;
 
     border-top: 0.5px solid var(--linii);
 }
 
-.catalog__tab-row .sizes {
+.catalog__tabs-row-top span {
     font-weight: 600;
     font-size: 18px;
+    line-height: 111%;
     text-transform: uppercase;
-    color: var(--linii);
 }
 
-.catalog__tabs {
+.catalog__tabs-row-top ul {
+    max-width: calc(50% - 10px);
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 47px;
 }
 
-.catalog__tabs button {
-    padding: 11px 12px;
-    border: 1px solid var(--belyy);
-    border-radius: 3px;
-    background: transparent;
-    transition: all 0.2s ease-in;
-    
-    &:hover {
-        background: var(--biryuza);
-        border: 1px solid var(--biryuza);
-    }
+.catalog__tabs-row-top ul li {
+    position: relative;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 111%;
+    text-transform: uppercase;
+    color: #afafaf;
+
+    cursor: pointer;
 }
 
-.catalog__tabs button.active {
-    background: var(--biryuza);
-    border: 1px solid var(--biryuza);
+.catalog__tabs-row-top ul li:not(:last-child)::after {
+    content: '/';
+    position: absolute;
+    top: 50%;
+    right: -28px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #afafaf;
+}
+.catalog__tabs-row-top ul li.active {
+    font-weight: 600;
+    color: var(--belyy);
 }
 
+.catalog__tabs-row-bottom {
+    padding: 14px 0;
 
-.catalog__list {
-    padding: 10px 0;
-    border-top: 0.50px solid var(--linii);
-    border-bottom: 0.50px solid var(--linii);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    border-top: 0.5px solid var(--linii);
 }
+
+.catalog__tabs-row-bottom ul {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    max-width: calc(50% - 10px);
+    width: 100%;
+}
+
+.catalog__tabs-row-bottom ul li {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 111%;
+    text-transform: uppercase;
+    color: #afafaf;
+    cursor: pointer;
+}
+
+.catalog__tabs-row-bottom ul li.active {
+    color: var(--biryuza);
+}
+
