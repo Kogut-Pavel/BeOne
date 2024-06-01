@@ -8,6 +8,10 @@
     border-bottom: 0.50px solid var(--linii);
 }
 
+.card.favourite .icon--heart-blue {
+    fill: var(--biryuza);
+    stroke: none;
+}
 
 .card__inner {
     position: relative;
