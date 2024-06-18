@@ -1,0 +1,73 @@
+.companybeone__top {
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 0.5px solid var(--linii);
+}
+
+.companybeone__text {
+    max-width: 895px;
+    width: 100%;
+    text-indent: 35%;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 111%;
+    text-transform: uppercase;
+    color: var(--belyy);
+}
+
+.companybeone__inner {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        'image image text-1 text-2'
+        'image image btn text-2';
+    gap: 20px;
+
+    padding: 10px 0;
+    border-top: 0.5px solid var(--linii);
+    border-bottom: 0.5px solid var(--linii);
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0.5px;
+        height: 100%;
+        background: var(--linii);
+    }
+}
+
+.companybeone__image {
+    grid-area: image;
+    min-width: 590px;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+.companybeone__text-1,
+.companybeone__text-2 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 111%;
+    color: #fafafa;
+}
+
+.companybeone__text-1 {
+    grid-area: text-1;
+}
+
+.companybeone__text-2 {
+    grid-area: text-2;
+}
+
+.companybeone__btn {
+    grid-area: btn;
+    font-family: var(--font-family);
+    background: var(--linii);
+    height: 56px;
+    align-self: flex-end;
+}

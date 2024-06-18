@@ -1,0 +1,13 @@
+.aboutcompany__text-img {
+    margin-top: 50px;
+    padding: 16px 0;
+    border-top: 0.5px solid var(--linii);
+    border-bottom: 0.5px solid var(--linii);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aboutcompany__text-img img {
+    width: 100%;
+}
