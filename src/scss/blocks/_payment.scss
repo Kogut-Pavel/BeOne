@@ -1,0 +1,69 @@
+.payment__inner {
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+        'text image'
+        'text image'
+        'tocontact image';
+    gap: 20px;
+    border-top: 0.5px solid var(--linii);
+}
+
+.payment__text-block {
+    grid-area: text;
+
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.payment__text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.payment__text h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 111%;
+    text-transform: uppercase;
+    color: var(--biryuza);
+}
+
+.payment__text p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 111%;
+    color: var(--belyy);
+}
+
+.payment__tocontact {
+    grid-area: tocontact;
+    height: 56px;
+    align-self: flex-end;
+    background: var(--linii);
+}
+
+.payment__inner-img {
+    grid-area: image;
+
+    position: relative; 
+    padding-top: 10px;
+    max-height: 600px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -10px;
+        height: 100%;
+        width: 0.50px;
+        background: var(--linii);
+    }
+    img {
+        width: 100%;
+    }
+}
