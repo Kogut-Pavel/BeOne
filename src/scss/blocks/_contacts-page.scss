@@ -1,0 +1,116 @@
+.contacts-page {
+    margin-bottom: 0;
+}
+
+.contacts-page__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 120px;
+    line-height: 111%;
+    text-transform: uppercase;
+}
+
+.contacts-page__title span:first-child {
+    font-weight: 600;
+    letter-spacing: -0.06em;
+    color: var(--linii);
+}
+
+.contacts-page__title span:last-child {
+    font-family: var(--font3);
+    font-weight: 400;
+    color: var(--belyy);
+}
+
+.contacts-page__text,
+.contacts-page__image picture {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    // gap: 20px;
+}
+
+.contacts-page__image {
+    border-bottom: 0.5px solid var(--linii);
+}
+
+.contacts-page__image picture {
+}
+
+.contacts-page__text {
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 111%;
+    text-transform: uppercase;
+}
+
+.contacts-page__text p {
+    grid-column: 2 / 5;
+    border-left: 0.5px solid var(--linii);
+    border-bottom: 0.5px solid var(--linii);
+    padding: 10px;
+    padding-right: 0;
+}
+
+.contacts-page__image img {
+    grid-column: 2 / 5;
+    padding: 10px;
+    padding-right: 0;
+    border-left: 0.5px solid var(--linii);
+    max-height: 400px;
+}
+
+.contacts-page__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 300px;
+        height: 100%;
+        width: 0.5px;
+        background-color: var(--linii);
+    }
+}
+
+.contacts-page__list li {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1 / 4;
+    border-bottom: 0.5px solid var(--linii);
+}
+.contacts-page__list__name,
+.contacts-page__list__value {
+    display: flex;
+    align-items: center;
+    padding: 11px 26px;
+    border: 1px solid var(--linii);
+}
+
+.contacts-page__list__name {
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 111%;
+    text-transform: uppercase;
+    color: var(--svet--biryuzovyy);
+}
+
+.contacts-page__list__value {
+    grid-column: 2 / 4;
+    margin-left: 10px;
+}
+
+.contacts-page__list__value,
+.contacts-page__list__value a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 111%;
+    text-transform: uppercase;
+    color: var(--belyy);
+}
