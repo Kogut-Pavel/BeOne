@@ -177,8 +177,11 @@
     border: 1px solid var(--linii);
 }
 
-.product__counter input,
+.product__counter .product__counter-number,
 .product__counter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     font-weight: 600;

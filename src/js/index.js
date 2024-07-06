@@ -1,6 +1,7 @@
 
 import mobileNav from './modules/mobile-nav.js';
 import sliders from './modules/sliders.js';
+import productCounter from './modules/productCounter.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,5 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Слайдеры
 	sliders();
 
-
+	// Счетчик товаров							
+	productCounter();
 });
