@@ -1,8 +1,8 @@
 const productCounter = function() {
-    let buttonCountMinus = document.querySelector('.product__counter-minus');
-    let buttonCountPlus = document.querySelector('.product__counter-plus');
+    let buttonCountMinus = document.querySelector('.counter-minus');
+    let buttonCountPlus = document.querySelector('.counter-plus');
 
-    let count = document.querySelector('.product__counter-number');
+    let count = document.querySelector('.counter-number');
     let number = 1;
 
     if (buttonCountPlus && buttonCountMinus) {

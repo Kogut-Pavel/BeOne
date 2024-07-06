@@ -167,30 +167,6 @@
     border-bottom: 0.5px solid var(--linii);
 }
 
-.product__counter {
-    max-width: 178px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    border: 1px solid var(--linii);
-}
-
-.product__counter .product__counter-number,
-.product__counter-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 111%;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--belyy);
-}
 
 .product__btn-tocart {
     max-width: 288px;

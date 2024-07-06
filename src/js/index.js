@@ -12,6 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Слайдеры
 	sliders();
 
-	// Счетчик товаров							
+	// Счетчик товара							
 	productCounter();
 });
