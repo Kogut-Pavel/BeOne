@@ -4,6 +4,7 @@ import sliders from './modules/sliders.js';
 import productCounter from './modules/productCounter.js';
 import accordeon from './modules/accordeon.js';
 import productSizes from './modules/productSizes.js';
+import miniCatalog from './modules/miniCatalog.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,4 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Переключение размера у продукта
 	productSizes();
+
+	// Каталог на главной странице
+	miniCatalog();
+	
 });
