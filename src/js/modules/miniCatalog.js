@@ -15,7 +15,6 @@ function miniCatalog() {
                     item.classList.add('none');
                 });
                 contentBox.classList.remove('none');
-                console.log(this.dataset.tab);
             });
         });
     } else {

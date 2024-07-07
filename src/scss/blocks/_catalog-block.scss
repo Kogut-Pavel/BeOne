@@ -9,6 +9,7 @@
     gap: 40px;
 
     border-top: 0.5px solid var(--linii);
+    border-bottom: 0.5px solid var(--linii);
 }
 
 .catalog-block__tab-row .sizes {
@@ -30,7 +31,7 @@
     border-radius: 3px;
     background: transparent;
     transition: all 0.2s ease-in;
-    
+
     &:hover {
         background: var(--biryuza);
         border: 1px solid var(--biryuza);
@@ -41,7 +42,6 @@
     background: var(--biryuza);
     border: 1px solid var(--biryuza);
 }
-
 
 .catalog-block__list {
     // display: grid;

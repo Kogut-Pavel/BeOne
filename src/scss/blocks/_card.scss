@@ -1,11 +1,12 @@
 .card {
+    // display: none;
     max-width: 300px;
     width: 100%;
     min-height: 387px;
 
     padding: 10px;
-    border-right: 0.50px solid var(--linii);
-    border-bottom: 0.50px solid var(--linii);
+    border-right: 0.5px solid var(--linii);
+    border-bottom: 0.5px solid var(--linii);
 }
 
 .card.favourite .icon--heart-blue {
@@ -28,12 +29,12 @@
     padding-left: 0;
 }
 
-.card:nth-child(1), 
-.card:nth-child(2), 
-.card:nth-child(3), 
+.card:nth-child(1),
+.card:nth-child(2),
+.card:nth-child(3),
 .card:nth-child(4) {
-    border-top: 0.50px solid var(--linii);
-    border-bottom: 0.50px solid var(--linii);
+    // border-top: 0.50px solid var(--linii);
+    border-bottom: 0.5px solid var(--linii);
 }
 
 .card:nth-child(4n) {
@@ -41,11 +42,14 @@
     border-right: none;
 }
 
+.show {
+    display: block;
+}
+
 .card__image {
     margin: 0 auto;
     width: fit-content;
     height: 275px;
-
 }
 
 .card__title {
