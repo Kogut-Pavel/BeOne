@@ -2,6 +2,7 @@
 import mobileNav from './modules/mobile-nav.js';
 import sliders from './modules/sliders.js';
 import productCounter from './modules/productCounter.js';
+import accordeon from './modules/accordeon.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,4 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Счетчик товара							
 	productCounter();
+
+	// Аккордеон на странице товара
+	accordeon()
+	
 });
