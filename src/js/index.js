@@ -3,6 +3,7 @@ import mobileNav from './modules/mobile-nav.js';
 import sliders from './modules/sliders.js';
 import productCounter from './modules/productCounter.js';
 import accordeon from './modules/accordeon.js';
+import productSizes from './modules/productSizes.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -17,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	productCounter();
 
 	// Аккордеон на странице товара
-	accordeon()
-	
+	accordeon();
+
+	// Переключение размера у продукта
+	productSizes();
 });
