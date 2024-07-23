@@ -167,7 +167,7 @@
 					</div>
 
 					<div class="catalog-block__tab-row">
-						<button type="button" class="sizes">Размерная сетка</button>
+						<button type="button" class="sizes" data-modal="sizes">Размерная сетка</button>
 
 						<div class="catalog-block__tabs">
 							<button type="button" class="btn active" data-tab="miniCatalog-goalkeeper-gloves">вратарские Перчатки</button>
@@ -748,6 +748,21 @@
 			</div>
 		</footer>
 
+		<div class="modal" id="sizes">
+			<div class="modal__content">
+				<button class="modal__close" type="button">
+					<svg class="icon icon--close">
+						<use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+					</svg>
+				</button>
+
+				<picture>
+					<source srcset="./img/modals/sizes.webp 1x, ./img/modals/sizes@2x.webp 2x" type="image/webp" />
+					<source srcset="./img/modals/sizes.jpg 1x, ./img/modals/sizes@2x.jpg 2x" type="image/jpeg" />
+					<img src="./img/modals/sizes.jpg" alt="#" />
+				</picture>
+			</div>
+		</div>
 		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>

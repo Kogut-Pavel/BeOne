@@ -6,6 +6,7 @@ import accordeon from './modules/accordeon.js';
 import productSizes from './modules/productSizes.js';
 import miniCatalog from './modules/miniCatalog.js';
 import catalogFilter from './modules/catalogFilter.js';
+import modals from './modules/modals.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -31,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Каталог на странице "каталог"
 	catalogFilter();
 
+	// Модальные окна
+	modals();
 
 	// filterSelection('all');
 	// // Добавить активный класс к текущей кнопке управления (выделите ее)

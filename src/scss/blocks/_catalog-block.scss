@@ -13,6 +13,13 @@
 }
 
 .catalog-block__tab-row .sizes {
+    transition: all 0.2s ease-in;
+    &:hover {
+        color: var(--belyy);
+    }
+}
+
+.catalog-block__tab-row .sizes {
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
