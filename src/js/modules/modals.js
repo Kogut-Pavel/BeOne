@@ -2,7 +2,7 @@ function modals() {
     const modalBtn = document.querySelectorAll('[data-modal]');
     const body = document.body;
     const modalClose = document.querySelectorAll('.modal__close');
-    const modal = document.querySelectorAll('.modal');
+    const modals = document.querySelectorAll('.modal');
 
     // Добавляем слушатель на кнопки с модальными окнами и добавляем классы при клике
     modalBtn.forEach((item) => {
@@ -14,6 +14,10 @@ function modals() {
 
             modalContent.addEventListener('click', (event) => {
                 event.stopPropagation();
+            });
+
+            modals.forEach(item => {
+                item.classList.remove('show');
             });
 
             modal.classList.add('show');
@@ -32,7 +36,7 @@ function modals() {
     function closeModal(modal) {
         let modalContent = modal.querySelector('.modal__content');
         let mobileNavOpen = document.querySelector('.mobile-nav--open');
-        modalContent.removeAttribute('style');
+        // modalContent.removeAttribute('style');
 
         setTimeout(() => {
             modal.classList.remove('show');
@@ -51,7 +55,7 @@ function modals() {
         });
     });
 
-    modal.forEach((item) => {
+    modals.forEach((item) => {
         item.addEventListener('click', (event) => {
             let currentModal = event.currentTarget;
             closeModal(currentModal);
