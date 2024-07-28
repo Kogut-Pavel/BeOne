@@ -1,32 +1,20 @@
-import { tns } from 'tiny-slider';
-
 function sliders() {
-    let heroSliderContainer = document.querySelector('.hero__slider');
 
-    if (heroSliderContainer) {
-        let heroSlider = tns({
-            container: '.hero__slider',
-            controlsContainer: '.hero__slider-controls',
-            items: 1,
-            slideBy: 1,
-            autoplay: false,
-            autoplayButton: false,
-            autoplayButtonOutput: false,
-            loop: true,
-            speed: 600,
-            controls: true,
-            nav: true,
-            fixedWidth: 680,
-        });
-    }
-
-    let heroDotsList = document.querySelectorAll('.hero .tns-nav button');
-
-    if (heroDotsList) {
-        for (let i = 0; i < heroDotsList.length; i++) {
-            heroDotsList[i].textContent = i + 1;
-        }
-    }
+    let heroSlider = new Swiper('.hero__slider-wrapper', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function(index, className) {
+                return (
+                    '<span class="' + className + '">' + (index + 1) + '</span>'
+                );
+            },
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 }
 
 export default sliders;

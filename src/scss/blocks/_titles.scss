@@ -10,6 +10,9 @@
     letter-spacing: -0.03em;
     font-family: var(--second-family);
     color: var(--belyy);
+    @include media-L-Laptop {
+        font-size: 70px;
+    }
 }
 
 .title-2 {
