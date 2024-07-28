@@ -7,6 +7,12 @@
     align-items: center;
 	flex-wrap: wrap;
     gap: 20px 40px;
+	@include mediaLaptop {
+		gap: 16px;
+	}
+	@include mediaTablet {
+		display: none;
+	}
 }
 
 .nav--bottom {
@@ -19,7 +25,9 @@
 
 .nav--bottom .nav__list {
 	gap: 33px;
-
+	@include mediaLaptop {
+		gap: 27px;
+	}
 }
 
 .nav--bottom .nav__list li a {

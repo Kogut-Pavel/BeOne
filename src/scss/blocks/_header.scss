@@ -1,10 +1,31 @@
 .header__logo {
     height: 43px;
+    @include mediaTablet {
+        display: none;
+    }
+}
+
+.header__logo--mobile {
+    display: none;
+    position: relative;
+    // z-index: 100;
+    @include mediaTablet {
+        display: block;
+    }
+    @include mediaMobile {
+        width: 96px;
+        height: auto;
+    }
 }
 
 .header__top {
     padding: 11px 0;
     background: var(--osnovnoy-cvet);
+    @include mediaTablet {
+        padding: 4px 0;
+        position: relative;
+        z-index: 100;
+    }
 }
 
 .header__row {
@@ -17,8 +38,11 @@
 .header__tel {
     font-size: 14px;
     font-weight: 500;
-    width: max-content;
+    width: 100%;
     max-width: fit-content;
+    @include mediaTablet {
+        display: none;
+    }
 }
 
 .header__bottom {
@@ -31,6 +55,9 @@
     align-items: center;
     gap: 21px;
     height: 20px;
+    @include mediaLaptop {
+        gap: 10px;
+    }
 }
 
 .header__account-list a {
@@ -39,8 +66,6 @@
     justify-content: center;
     height: 20px;
 }
-
-
 
 .header__nav {
     display: block;
