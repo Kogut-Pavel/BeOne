@@ -13,6 +13,10 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--belyy);
+    @include mediaLaptop {
+        font-size: 14px;
+        gap: 6px;
+    }
 }
 
 .btn--link {

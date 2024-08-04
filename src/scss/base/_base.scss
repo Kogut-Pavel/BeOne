@@ -26,6 +26,12 @@ a {
 
 section {
 	margin-bottom: 110px;
+	@include mediaLaptop {
+		margin-bottom: 80px;
+	}
+	@include mediaTablet {
+		margin-bottom: 50px;
+	}
 }
 
 .pt {

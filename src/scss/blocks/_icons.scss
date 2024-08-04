@@ -27,6 +27,10 @@
 	stroke: var(--belyy);
 	width: 18px;
 	height: 19px;
+	@include mediaLaptop {
+		width: 13px;
+		height: 14px;
+	}
 }
 
 // иконки в карточке

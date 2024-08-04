@@ -13,6 +13,16 @@
     @include media-L-Laptop {
         font-size: 70px;
     }
+    @include mediaLaptop {
+        font-size: 50px;
+    }
+    @include mediaTablet {
+        font-size: 64px;
+    }
+    @include mediaMobile {
+        margin-bottom: 15px;
+        font-size: 38px;
+    }
 }
 
 .title-2 {
