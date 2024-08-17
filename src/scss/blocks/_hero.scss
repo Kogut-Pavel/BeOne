@@ -339,8 +339,8 @@
     }
 }
 
-.hero .swiper-button-next:after,
-.hero .swiper-button-prev:after {
+.hero .swiper-button-next::after,
+.hero .swiper-button-prev::after {
     font-size: 70px;
     @include media-L-Laptop {
         font-size: 60px;

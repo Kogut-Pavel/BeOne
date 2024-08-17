@@ -10,6 +10,24 @@
 
     border-top: 0.5px solid var(--linii);
     border-bottom: 0.5px solid var(--linii);
+
+    @media (max-width: 1230px) {
+        padding: 15px 0;
+    }
+    @include mediaLaptop {
+        padding: 12px 0;
+    }
+    @include mediaTablet {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        border: none;
+        padding: 0;
+        margin-right: -15px;
+    }
+    @include mediaMobile {
+        margin-right: 0;
+    }
 }
 
 .catalog-block__tab-row .sizes {
@@ -17,6 +35,9 @@
     &:hover {
         color: var(--belyy);
     }
+}
+
+@media (max-width: 1230px) {
 }
 
 .catalog-block__tab-row .sizes {
@@ -27,9 +48,37 @@
 }
 
 .catalog-block__tabs {
+    max-width: 60%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
+
+    @media (max-width: 1230px) {
+        margin-right: -15px;
+        padding-right: 15px;
+        gap: 16px;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    @include mediaLaptop {
+        gap: 10px;
+    }
+    @include mediaTablet {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        padding: 10px 0;
+        padding-right: 15px;
+        border-top: 0.5px solid var(--linii);
+        border-bottom: 0.5px solid var(--linii);
+    }
+    @include mediaMobile {
+        padding-right: 0;
+    }
 }
 
 .catalog-block__tabs button {
@@ -38,10 +87,15 @@
     border-radius: 3px;
     background: transparent;
     transition: all 0.2s ease-in;
-
+    flex-grow: 1;
     &:hover {
         background: var(--biryuza);
         border: 1px solid var(--biryuza);
+    }
+
+    @media (max-width: 1230px) {
+        flex-grow: 0;
+        min-width: fit-content;
     }
 }
 
@@ -51,11 +105,103 @@
 }
 
 .catalog-block__list {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr 1fr 1fr;
-    // gap: 20px;
+    @media (max-width: 1230px) {
+        margin-right: -15px;
+    }
+    @include mediaMobile {
+        margin-right: 0;
+    }
+    .swiper-wrapper {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        @media (max-width: 1230px) {
+            flex-wrap: nowrap;
+        }
+    }
+}
 
-    display: flex;
-    align-items: stretch;
-    flex-wrap: wrap;
+.catalog-block__list .swiper-wrapper {
+    height: auto;
+}
+
+.catalog-block__mobile-nav {
+    display: none;
+    @include mediaMobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+        border-bottom: 0.5px solid var(--linii);
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 15px;
+            left: 0;
+        }
+    }
+}
+
+.catalog-block-next,
+.catalog-block-prev {
+    @include mediaMobile {
+        position: relative;
+        padding: 0 30px;
+        width: 24px;
+        height: 24px;
+        color: var(--biryuza);
+        &::after {
+            font-size: 32px;
+        }
+    }
+}
+
+.swiper-scrollbar {
+    --swiper-scrollbar-drag-bg-color: var(--linii);
+}
+
+.catalog .swiper-scrollbar-drag {
+    height: 13px;
+    top: -3px;
+}
+
+.catalog .swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    @media (max-width: 1230px) {
+        position: relative;
+        border-radius: 10px;
+        height: 7px;
+        left: 0;
+        margin-top: 35px;
+        background: var(--seryy);
+    }
+}
+
+.catalog-block-swiper-scrollbar {
+    display: none;
+    @media (max-width: 1230px) {
+        display: block;
+    }
+    @include mediaMobile {
+        display: none;
+    }
+}
+
+.catalog-block__mobile-link {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 111%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--svet--biryuzovyy);
+    border-top: 0.5px solid var(--linii);
+    border-bottom: 0.5px solid var(--linii);
+    @include mediaMobile {
+        display: block;
+    }
 }

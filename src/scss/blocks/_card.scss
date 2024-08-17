@@ -1,12 +1,17 @@
-.card {
+.card.swiper-slide {
     // display: none;
     max-width: 300px;
     width: 100%;
+    height: auto;
+    min-width: 285px;
     min-height: 387px;
 
     padding: 10px;
     border-right: 0.5px solid var(--linii);
     border-bottom: 0.5px solid var(--linii);
+    @include mediaMobile {
+        padding: 5px;
+    }
 }
 
 .card.favourite .icon--heart-blue {
@@ -27,6 +32,35 @@
 
 .card:nth-child(4n + 1) {
     padding-left: 0;
+    @media (max-width: 1230px) {
+        padding-left: 10px;
+    }
+    @include mediaMobile {
+        padding: 5px;
+    }
+}
+
+.card:nth-child(1) {
+    @media (max-width: 1230px) {
+        padding-left: 0;
+    }
+    @include mediaMobile {
+        padding: 5px;
+    }
+}
+
+.card:last-child {
+    @media (max-width: 1230px) {
+        padding-right: 0;
+        border-right: 0;
+    }
+    @include mediaTablet {
+        padding-right: 10px;
+    }
+    @include mediaMobile {
+        border: none;
+        padding: 5px;
+    }
 }
 
 .card:nth-child(1),
@@ -35,11 +69,28 @@
 .card:nth-child(4) {
     // border-top: 0.50px solid var(--linii);
     border-bottom: 0.5px solid var(--linii);
+    @include mediaMobile {
+        border: none;
+    }
 }
 
 .card:nth-child(4n) {
     padding-right: 0;
     border-right: none;
+    @media (max-width: 1230px) {
+        padding-right: 10px;
+        border-right: 0.5px solid var(--linii);
+    }
+    @include mediaMobile {
+        border: none;
+        padding: 5px;
+    }
+}
+
+.card.swiper-slide {
+    @include mediaMobile {
+        border: none;
+    }
 }
 
 .show {
@@ -142,6 +193,9 @@
         color: var(--belyy);
         background: var(--biryuza);
     }
+    @include mediaMobile {
+        display: none;
+    }
 }
 
 .card.card-image {
@@ -149,5 +203,6 @@
         object-fit: cover;
         max-width: 300px;
         width: 100%;
+        height: 100%;
     }
 }

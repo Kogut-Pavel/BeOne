@@ -1,5 +1,4 @@
 function sliders() {
-
     let heroSlider = new Swiper('.hero__slider-wrapper', {
         pagination: {
             el: '.swiper-pagination',
@@ -13,6 +12,46 @@ function sliders() {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+        },
+    });
+
+    const catalogsSwiper = new Swiper('.catalog-block__list', {
+        slidesPerView: 4,
+        // spaceBetween: 10,
+        freeMode: {
+            enabled: true,
+        },
+        navigation: {
+            nextEl: '.catalog-block-next',
+            prevEl: '.catalog-block-prev',
+        },
+        scrollbar: {
+            el: '.catalog-block-swiper-scrollbar',
+            draggable: true,
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 'auto',
+                centeredSlides: true,
+                freeMode: false,
+            },
+            450: {
+                slidesPerView: 'auto',
+            },
+            768: {
+                slidesPerView: 2.5,
+                freeMode: {
+                    enabled: true,
+                },
+            },
+            1024: {
+                slidesPerView: 3.2,
+            },
+            1231: {
+                freeMode: false,
+                enabled: false,
+            },
         },
     });
 }

@@ -11,6 +11,13 @@
     grid-template-columns: 1fr 1fr;
     align-items: flex-start;
     gap: 20px;
+    @media (max-width: 1230px) {
+        margin-bottom: 20px;
+    }
+    @include mediaTablet {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .section-header p {
@@ -21,6 +28,10 @@
     text-transform: uppercase;
     color: var(--belyy);
     text-wrap: pretty;
+    @media (max-width: 1230px) {
+        font-size: 25px;
+        letter-spacing: -0.03em;
+    }
 }
 
 // отступы индивидуальны и стилизуются в соответствующих файлах
