@@ -42,4 +42,8 @@
     line-height: 111%;
     text-transform: uppercase;
     color: var(--belyy);
+    @include mediaTablet {
+        font-size: 25px;
+        letter-spacing: -0.03em;
+    }
 }
