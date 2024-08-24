@@ -1,4 +1,3 @@
-
 .counter {
     max-width: 178px;
     width: 100%;
@@ -7,6 +6,9 @@
     align-items: center;
     padding: 5px;
     border: 1px solid var(--linii);
+    @include mediaLaptop {
+        max-width: 107px;
+    }
 }
 
 .counter .counter-number,
