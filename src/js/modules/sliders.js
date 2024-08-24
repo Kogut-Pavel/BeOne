@@ -54,7 +54,7 @@ function sliders() {
                     1024: {
                         slidesPerView: 3.2,
                     },
-                    1231: {
+                    1241: {
                         freeMode: false,
                         enabled: false,
                     },

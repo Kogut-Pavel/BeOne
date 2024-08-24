@@ -34,4 +34,7 @@ section {
 
 .pt {
 	padding-top: 45px;
+	@include mediaMobile {
+		padding-top: 25px;
+	}
 }
