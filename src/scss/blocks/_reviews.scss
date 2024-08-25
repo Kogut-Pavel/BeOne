@@ -10,6 +10,12 @@
     font-size: 30px;
     line-height: 111%;
     text-transform: uppercase;
+    @include mediaLaptop {
+        font-size: 25px;
+    }
+    @include mediaTablet {
+        font-size: 18px;
+    }
 }
 
 .reviews__list {
@@ -36,21 +42,38 @@
         height: 100%;
         background: var(--linii);
     }
+
+    @include mediaTablet {
+        flex-direction: column;
+        gap: 10px;
+        &::before {
+            content: none;
+        }
+    }
 }
 
 .review__image {
     max-width: calc(50% - 10px);
     width: 100%;
+    @include mediaTablet {
+        max-width: 100%;
+    }
     img {
         width: 100%;
-        max-height: 336px;
         height: 100%;
+        object-fit: cover;
+        @include mediaTablet {
+            max-height: 300px;
+        }
     }
 }
 
 .review__content {
     max-width: calc(50% - 10px);
     width: 100%;
+    @include mediaTablet {
+        max-width: 100%;
+    }
 }
 
 .review__header {
@@ -61,6 +84,9 @@
     gap: 10px;
     padding-bottom: 10px;
     border-bottom: 0.5px solid var(--linii);
+    @include mediaMobile {
+        gap: 5px 10px;
+    }
 }
 
 .review__fc {
@@ -96,6 +122,9 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    @include mediaMobile {
+        gap: 5px;
+    }
 }
 
 .review__name {
@@ -124,10 +153,14 @@
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: var(--linii);
-    border-bottom: 0.50px solid var(--linii);
+    border-bottom: 0.5px solid var(--linii);
     transition: all 0.2s ease-in;
-    
+
     &:hover {
         color: var(--belyy);
+    }
+    @include mediaTablet {
+        padding: 10px;
+        font-size: 14px;
     }
 }
