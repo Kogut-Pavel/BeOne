@@ -6,6 +6,17 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    @include mediaLaptop {
+        margin-top: 36px;
+        padding: 0;
+        border: none;
+    }
+    @include mediaTablet {
+        margin-top: 24px;
+    }
+    @include mediaMobile {
+        margin-top: 15px;
+    }
 }
 
 .aboutcompany__text-img img {
