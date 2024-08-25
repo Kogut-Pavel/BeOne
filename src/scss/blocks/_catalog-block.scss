@@ -9,7 +9,6 @@
     gap: 40px;
 
     border-top: 0.5px solid var(--linii);
-    border-bottom: 0.5px solid var(--linii);
 
     @media (max-width: 1240px) {
         padding: 15px 0;
@@ -50,7 +49,6 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-
     @media (max-width: 1240px) {
         margin-right: -15px;
         padding-right: 15px;
@@ -71,7 +69,6 @@
         padding: 10px 0;
         padding-right: 15px;
         border-top: 0.5px solid var(--linii);
-        border-bottom: 0.5px solid var(--linii);
     }
     @include mediaMobile {
         padding-right: 0;
@@ -102,6 +99,7 @@
 }
 
 .catalog-block__list {
+    border-top: 0.5px solid var(--linii);
     @media (max-width: 1240px) {
         margin-right: -15px;
     }
